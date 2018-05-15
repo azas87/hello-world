@@ -24,7 +24,7 @@ public class ChattingServer
 				ObjectInputStream ois = new ObjectInputStream(client.getInputStream());
 				ObjectOutputStream oos = new ObjectOutputStream(client.getOutputStream());
 				
-				
+				// git 잘 되나?
 				ChattingServerThread cst = new ChattingServerThread(ois, oos);//기다리려고 
 				Thread t = new Thread(cst);
 				t.start();
